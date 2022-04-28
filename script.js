@@ -7,8 +7,11 @@ function createRow(rowNum) {
 }
 
 function createColumn(columnNum) {
-    for (let i = 0; i < columnNum; i++) {
-
+    for (let i = 0; i < rows.length; i++) {
+        for (j = 0; j < columnNum; j++) {
+            let newCell = document.createElement("div");
+            rows[j].appendChild(newCell).className = "cell";
+        }
     }
 }
 
