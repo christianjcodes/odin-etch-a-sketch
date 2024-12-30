@@ -1,5 +1,5 @@
 const container = document.getElementById("container");
-let rows = document.getElementsByClassName("gridRow");
+let columns = document.getElementsByClassName("gridCol");
 let cells = document.getElementsByClassName("cell");
 
 defaultGrid();
@@ -9,18 +9,22 @@ function defaultGrid() {
     createColumn(16);
 }
 
-function createRow(rowNum) {
-    for (let i = 0; i < rowNum; i++) {
-        let row = document.createElement("div");
-        container.appendChild(row).className = "gridRow";
+cells.onmouseover = function() {
+    document.cells.style.backgroundColor = "white";
+}
+
+function createRow(colNum) {
+    for (let i = 0; i < colNum; i++) {
+        let column = document.createElement("div");
+        container.appendChild(column).className = "gridCol";
     }
 }
 
 function createColumn(cellNum) {
-    for (let i = 0; i < rows.length; i++) {
+    for (let i = 0; i < columns.length; i++) {
         for (let j = 0; j < cellNum; j++) {
             let newCell = document.createElement("div");
-            rows[j].appendChild(newCell).className = "cell";
+            columns[j].appendChild(newCell).className = "cell";
         }
     }
 }
