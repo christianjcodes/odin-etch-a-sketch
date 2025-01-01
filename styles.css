@@ -1,6 +1,7 @@
 html {
     margin: 0;
     min-height: 100%;
+    box-sizing: border-box;
 }
 
 body {
@@ -18,21 +19,39 @@ footer {
     color: white;
 }
 
+#footerContainer {
+    display: flex;
+    justify-content: center;
+}
+
 #header {
     text-align: center;
     margin-top: 10vh;
     color: white;
 }
 
-#container {
-    height: 70vh;
+#masterContainer {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 70vh;
+    width: 100%;
+}
+
+#container {
+    display: flex;
+    height: 50vh;
+    width: 50vh;
 }
 
 .cell {
     border: 1px solid white;
-    min-width: 20px;
-    min-height: 20px;
+    flex: 1;
+    padding-bottom: 100%;
+}
+
+.gridCol {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
