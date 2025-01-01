@@ -46,13 +46,9 @@ button.addEventListener("click", function() {
     
     let gridSize = prompt("Enter the number of squares per side of the grid (Max 100): ");
 
-    if (gridSize === null) {
+    if (!parseInt(gridSize)) {
         alert("Enter a number less than 100!");
         return;
-    }
-
-    if (!parseInt(gridSize)) {
-        alert("Enter a number less than 100!")
     }
 
     gridSize = parseInt(gridSize);
