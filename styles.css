@@ -40,8 +40,9 @@ footer {
 
 #container {
     display: flex;
-    height: 50vh;
-    width: 50vh;
+    height: 60vh;
+    width: 60vh;
+    border: 1px solid white;
 }
 
 .cell {
@@ -54,4 +55,5 @@ footer {
     display: flex;
     flex-direction: column;
     width: 100%;
+    border: 1px solid white;
 }

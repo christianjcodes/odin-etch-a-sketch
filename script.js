@@ -27,7 +27,6 @@ function createCells(cellNum) {
 }
 
 // Function that changes the color of the cells when hovered
-
 function etchCells() {
 
     for (let i = 0; i < cells.length; i++) {
