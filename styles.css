@@ -12,6 +12,8 @@ body {
 }
 
 footer {
+    display: flex;
+    align-items: center;
     position: absolute;
     bottom: 0;
     padding-bottom: 2vh;
@@ -22,6 +24,7 @@ footer {
 #footerContainer {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 #header {
@@ -56,4 +59,27 @@ footer {
     flex-direction: column;
     width: 100%;
     border: 1px solid white;
+}
+
+#gridBtn {
+    background-color: #52c8fa;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    padding: 8px 20px;
+    border-radius: 5px;
+}
+
+#gridBtn:hover {
+    background-color: #20b5f5;
+    cursor: pointer;
+}
+
+#gitLogo:hover {
+    background-color: gray;
+}
+
+#gitLogo {
+    width: 20px;
+    margin-left: 10px;
 }
